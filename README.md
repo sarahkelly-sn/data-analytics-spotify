@@ -1,14 +1,15 @@
 <div align="center">
-  <a href="seu-link-aqui">
-    <img src=".github/logo.png" alt="Logo" width="120" height="120">
+  <a href="https://github.com/spotify">
+    <img src="https://avatars.githubusercontent.com/u/251374?s=200&v=4" alt="Logo" width="120" height="120">
   </a>
 
   <h1 align="center">Spotify Data Analysis</h1>
 
   <p align="center">
-    <h3> Mid-Level Data Analyst </h3>
+    <h3>Portfolio Project for Learning</h3>
   </p>
 </div>
+
 
 ## About The Project
 
@@ -24,7 +25,17 @@ The project collects data such as the most listened songs, artists, playlists, a
   - User playlists and their characteristics
   - Audio features for each track
   - Insights into genres and listening times
+    
+## Links to Project Files
 
+Check out the code and visualizations that power the project. 
+Click the links below to access the files.
+
+-  [Python Code](seu-link-aqui)
+-  [Power BI Report](seu-link-aqui)
+
+
+  
 ## Built With
 
 In this section, the main tools and libraries used in the development of this project are listed.
@@ -72,7 +83,6 @@ To run this project locally, you will need to have Python and the necessary libr
                                                   redirect_uri='YOUR_REDIRECT_URI',
                                                   scope='user-top-read'))
 
-   # Get current user's top tracks
    top_tracks = sp.current_user_top_tracks(limit=20)
    for idx, track in enumerate(top_tracks['items']):
        print(f"{idx + 1}. {track['name']} by {track['artists'][0]['name']}")
@@ -84,7 +94,6 @@ To run this project locally, you will need to have Python and the necessary libr
    ```
    import pandas as pd
 
-   # Assuming 'data' is a list of your top tracks
    data = [{'track': track['name'], 'artist': track['artists'][0]['name']} for track in top_tracks['items']]
    df = pd.DataFrame(data)
    df.to_csv('top_tracks.csv', index=False)
@@ -110,7 +119,7 @@ Here's the roadmap listing all completed and ongoing stages for the current proj
 - [x] **Data Collection Script Development**
 - [x] **Saving Data to CSV Format**
 - [x] **Importing Data into Power BI**
-- [ ] **Creating Visualizations in Power BI**
+- [x] **Creating Visualizations in Power BI**
 
 ## Contact
 
