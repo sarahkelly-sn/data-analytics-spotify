@@ -31,7 +31,7 @@ The project collects data such as the most listened songs, artists, playlists, a
 Check out the code and visualizations that power the project. 
 Click the links below to access the files.
 
--  [Python Code](seu-link-aqui)
+-  [Python Code](https://github.com/sarahkelly-sn/data-analytics-spotify/blob/main/index.py)
 -  [Power BI Report](seu-link-aqui)
 
 
